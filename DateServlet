@@ -1,0 +1,14 @@
+package com.bytecode.Manish;
+import javax.servlet.*;
+import java.io.*;
+import java.util.*;
+public class DateServlet1 extends GenericServlet
+  {
+	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+      res.setContentType("text/html");
+	  PrintWriter pw = res.getWriter();
+	   Date date1= new Date();
+	   pw.println("Hey ! Manish current date & time is "+date1);
+	   pw.close();
+   }
+}
